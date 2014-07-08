@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>9.0.21022</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{80CE8C27-FECA-E020-5EC6-DCB3914EBC42}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_4_2;UNITY_3_4;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_OSX;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Misc\Menu.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Behaviours\AnimatedUVBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Behaviours\DropDownElementBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Behaviours\HorizontalLayoutBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Behaviours\ILayoutBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Behaviours\InteractionBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Behaviours\LayoutBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Behaviours\OpenDropDownMenuBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Behaviours\UVMoveBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Behaviours\VerticalLayoutBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Configs\ScreenConfig.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\AlertTextPanel.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\Button.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\CameraScreen.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\CheckBox.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\Control.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\DropDownMenu.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\FPSPanel.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\Frame.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\GUIGameObject.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\GUIPlane.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\GUITextPlane.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\HVPanel.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\NumberScrollField.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\Panel.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\RadioCollection.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\RolloutPanel.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\Slider.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\SliderHandle.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\Text.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Elements\TextPanel.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\EventArgs\CheckBoxEventArgs.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\EventArgs\MouseEventArgs.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Samples\SampleUIController.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Samples\TestAllInteractionBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Samples\TestAllInteractionsBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Samples\TestMoveWithMouse.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Samples\TestSwipeBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Samples\TestUIControllerBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Wrapper\InputEvents.cs" />
+     <Compile Include="Assets\Scripts\GUI_Module\Wrapper\RectExtension.cs" />
+     <Compile Include="Assets\Scripts\General_Module\ControlManager.cs" />
+     <Compile Include="Assets\Scripts\General_Module\Controller.cs" />
+     <Compile Include="Assets\Scripts\General_Module\EditorDebug.cs" />
+     <Compile Include="Assets\Scripts\General_Module\Resource_Module\ResourceLoadingBehaviour.cs" />
+     <Compile Include="Assets\Scripts\General_Module\Resource_Module\ResourceManager.cs" />
+     <Compile Include="Assets\Scripts\General_Module\Time_Module\TimeBehaviour.cs" />
+     <Compile Include="Assets\Scripts\General_Module\Time_Module\Timer.cs" />
+     <Compile Include="Assets\Scripts\Samples\BehaviourEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Samples\SampleMovementController.cs" />
+     <Compile Include="Assets\Scripts\Storage_Module\LocalStorage.cs" />
+     <Compile Include="Assets\Scripts\Unity_Extensions\_FloatExtensions.cs" />
+     <Compile Include="Assets\Scripts\Unity_Extensions\_RectExtension.cs" />
+     <Compile Include="Assets\Scripts\Unity_Extensions\_Vector2Extensions.cs" />
+     <Compile Include="Assets\Scripts\Unity_Extensions\_Vector3Extensions.cs" />
+     <Compile Include="Assets\Scripts\Web_Module\Facebook.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
+	
